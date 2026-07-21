@@ -1,0 +1,176 @@
+```css
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#2563eb,#1e40af,#0f172a);
+    overflow:hidden;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+    width:1000px;
+    height:600px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    box-shadow:0 20px 60px rgba(0,0,0,.3);
+}
+
+/* ==========================
+   LADO ESQUERDO
+========================== */
+
+.left{
+    background:linear-gradient(180deg,#2563eb,#1d4ed8);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+    text-align:center;
+}
+
+.left h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.left p{
+    font-size:18px;
+    line-height:1.7;
+    opacity:.9;
+}
+
+/* ==========================
+   LADO DIREITO
+========================== */
+
+.right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f8fafc;
+}
+
+.login-box{
+    width:360px;
+}
+
+.login-box h2{
+    text-align:center;
+    margin-bottom:35px;
+    color:#1e293b;
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+.input-group{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.input-group i{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#64748b;
+}
+
+.input-group input{
+    width:100%;
+    padding:15px 15px 15px 45px;
+    border:1px solid #dbeafe;
+    border-radius:12px;
+    outline:none;
+    transition:.3s;
+    font-size:15px;
+}
+
+.input-group input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 10px rgba(37,99,235,.2);
+}
+
+/* ==========================
+   BOTÃO
+========================== */
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+.login-box p{
+    text-align:center;
+    margin-top:20px;
+    color:#64748b;
+}
+
+.login-box a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:900px){
+
+.container{
+    width:95%;
+    grid-template-columns:1fr;
+    height:auto;
+}
+
+.left{
+    display:none;
+}
+
+.right{
+    padding:40px 20px;
+}
+
+.login-box{
+    width:100%;
+    max-width:350px;
+}
+
+}
+```
