@@ -17,4 +17,4 @@ Jogo da cobrinha desenvolvido em HTML, CSS e JavaScript.
 
 ## Autor
 
-Seu Nome
+KAYO GOMES 
