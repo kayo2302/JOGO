@@ -1,6 +1,6 @@
 body{
     background:#222;
-    color:white;
+    color:Pink;
     font-family:Arial;
     text-align:center;
 }
@@ -12,5 +12,5 @@ canvas{
 }
 
 h1{
-    color:lime;
+    color:Gray;
 }
