@@ -1,0 +1,135 @@
+```javascript id="4l3m9r"
+// ==============================
+// MENU LATERAL
+// ==============================
+
+const menuBtn = document.querySelector(".menu i");
+const sidebar = document.querySelector(".sidebar");
+
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("mini");
+});
+
+// ==============================
+// BOTÃO MODO ESCURO
+// ==============================
+
+const btnDark = document.createElement("button");
+btnDark.innerHTML = "🌙";
+btnDark.className = "dark-button";
+
+document.querySelector(".actions").appendChild(btnDark);
+
+btnDark.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+});
+
+// ==============================
+// GRÁFICO DE LINHA
+// ==============================
+
+const linha = document.getElementById("graficoLinha");
+
+if (linha) {
+    new Chart(linha, {
+        type: "line",
+        data: {
+            labels: [
+                "Jan",
+                "Fev",
+                "Mar",
+                "Abr",
+                "Mai",
+                "Jun",
+                "Jul"
+            ],
+            datasets: [{
+                label: "Vendas",
+                data: [1200, 1800, 1500, 2600, 3200, 4200, 5000],
+                borderWidth: 3,
+                tension: 0.4,
+                fill: true,
+                backgroundColor: "rgba(37,99,235,.15)",
+                borderColor: "#2563eb",
+                pointRadius: 5,
+                pointBackgroundColor: "#2563eb"
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: true
+                }
+            }
+        }
+    });
+}
+
+// ==============================
+// GRÁFICO DE PIZZA
+// ==============================
+
+const pizza = document.getElementById("graficoPizza");
+
+if (pizza) {
+    new Chart(pizza, {
+        type: "doughnut",
+        data: {
+            labels: [
+                "Notebook",
+                "Celular",
+                "Monitor",
+                "Mouse"
+            ],
+            datasets: [{
+                data: [35, 30, 20, 15],
+                backgroundColor: [
+                    "#2563eb",
+                    "#22c55e",
+                    "#f59e0b",
+                    "#ef4444"
+                ]
+            }]
+        },
+        options: {
+            responsive: true
+        }
+    });
+}
+
+// ==============================
+// ANIMAÇÃO DOS CARDS
+// ==============================
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card, index) => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(30px)";
+
+    setTimeout(() => {
+        card.style.transition = ".5s";
+        card.style.opacity = "1";
+        card.style.transform = "translateY(0)";
+    }, index * 150);
+});
+
+// ==============================
+// PESQUISA
+// ==============================
+
+const pesquisa = document.querySelector("input");
+
+if (pesquisa) {
+    pesquisa.addEventListener("keyup", () => {
+        console.log("Pesquisando:", pesquisa.value);
+    });
+}
+
+// ==============================
+// BOAS-VINDAS
+// ==============================
+
+console.log("Dashboard carregado com sucesso!");
+```
