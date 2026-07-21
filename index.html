@@ -1,0 +1,224 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Moderno</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+<h2>🚀 Dashboard</h2>
+</div>
+
+<ul>
+
+<li class="active">
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+<span>Dashboard</span>
+</a>
+</li>
+
+<li>
+<a href="usuarios.html">
+<i class="fa-solid fa-users"></i>
+<span>Usuários</span>
+</a>
+</li>
+
+<li>
+<a href="relatorios.html">
+<i class="fa-solid fa-chart-line"></i>
+<span>Relatórios</span>
+</a>
+</li>
+
+<li>
+<a href="financeiro.html">
+<i class="fa-solid fa-wallet"></i>
+<span>Financeiro</span>
+</a>
+</li>
+
+<li>
+<a href="produtos.html">
+<i class="fa-solid fa-box"></i>
+<span>Produtos</span>
+</a>
+</li>
+
+<li>
+<a href="configuracoes.html">
+<i class="fa-solid fa-gear"></i>
+<span>Configurações</span>
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<div class="menu">
+<i class="fa-solid fa-bars"></i>
+<h1>Painel Administrativo</h1>
+</div>
+
+<div class="actions">
+
+<input type="text" placeholder="Pesquisar...">
+
+<i class="fa-solid fa-bell"></i>
+
+<div class="perfil">
+
+<img src="https://i.pravatar.cc/50" alt="perfil">
+
+<div>
+
+<h4>Kayo</h4>
+<p>Administrador</p>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="cards">
+
+<div class="card">
+<i class="fa-solid fa-users"></i>
+<h3>Usuários</h3>
+<h2>1.250</h2>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-cart-shopping"></i>
+<h3>Pedidos</h3>
+<h2>320</h2>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-dollar-sign"></i>
+<h3>Vendas</h3>
+<h2>R$18.500</h2>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-chart-simple"></i>
+<h3>Lucro</h3>
+<h2>R$8.420</h2>
+</div>
+
+</section>
+
+<section class="graficos">
+
+<div class="grafico-card">
+
+<h2>Vendas Mensais</h2>
+
+<canvas id="graficoLinha"></canvas>
+
+</div>
+
+<div class="grafico-card">
+
+<h2>Produtos</h2>
+
+<canvas id="graficoPizza"></canvas>
+
+</div>
+
+</section>
+
+<section class="tabela">
+
+<h2>Últimos Pedidos</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Cliente</th>
+<th>Status</th>
+<th>Valor</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>#001</td>
+<td>João</td>
+<td><span class="ok">Pago</span></td>
+<td>R$2.300</td>
+
+</tr>
+
+<tr>
+
+<td>#002</td>
+<td>Maria</td>
+<td><span class="envio">Enviado</span></td>
+<td>R$980</td>
+
+</tr>
+
+<tr>
+
+<td>#003</td>
+<td>Carlos</td>
+<td><span class="processo">Processando</span></td>
+<td>R$1.540</td>
+
+</tr>
+
+<tr>
+
+<td>#004</td>
+<td>Ana</td>
+<td><span class="ok">Pago</span></td>
+<td>R$760</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
