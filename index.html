@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard</title>
+<title>Dashboard Simples</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -16,180 +16,54 @@
 <body>
 
 <div class="sidebar">
+<h2>Dashboard</h2>
 
-    <h2>Dashboard</h2>
-
-    <ul>
-
-        <li class="active">🏠 Início</li>
-
-        <li>📊 Relatórios</li>
-
-        <li>👥 Usuários</li>
-
-        <li>💰 Financeiro</li>
-
-        <li>📦 Produtos</li>
-
-        <li>⚙ Configurações</li>
-
-    </ul>
+<ul>
+<li class="active">🏠 Início</li>
+<li>📊 Relatórios</li>
+<li>👥 Usuários</li>
+<li>⚙ Configurações</li>
+</ul>
 
 </div>
 
 <div class="main">
 
-<div class="topbar">
+<header>
+
+<h1>Bem-vindo!</h1>
 
 <input type="text" placeholder="Pesquisar...">
 
-<div class="profile">
-
-<img src="https://i.pravatar.cc/50" alt="Avatar">
-
-<span>Administrador</span>
-
-</div>
-
-</div>
+</header>
 
 <div class="cards">
 
 <div class="card">
-
 <h3>Usuários</h3>
-
-<h1 id="usuarios">1250</h1>
-
+<h2>1250</h2>
 </div>
 
 <div class="card">
-
 <h3>Vendas</h3>
-
-<h1 id="vendas">R$ 18.500</h1>
-
+<h2>R$18.500</h2>
 </div>
 
 <div class="card">
-
 <h3>Pedidos</h3>
-
-<h1 id="pedidos">320</h1>
-
+<h2>320</h2>
 </div>
 
 <div class="card">
-
 <h3>Lucro</h3>
-
-<h1 id="lucro">R$ 8.420</h1>
-
+<h2>R$8.420</h2>
 </div>
 
 </div>
 
-<div class="charts">
+<div class="grafico">
 
-<div class="chart">
-
-<canvas id="graficoLinha"></canvas>
-
-</div>
-
-<div class="chart">
-
-<canvas id="graficoPizza"></canvas>
-
-</div>
-
-</div>
-
-<div class="table">
-
-<h2>Últimos Pedidos</h2>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>ID</th>
-
-<th>Cliente</th>
-
-<th>Produto</th>
-
-<th>Status</th>
-
-<th>Valor</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>#001</td>
-
-<td>João</td>
-
-<td>Notebook</td>
-
-<td>Pago</td>
-
-<td>R$ 4.500</td>
-
-</tr>
-
-<tr>
-
-<td>#002</td>
-
-<td>Maria</td>
-
-<td>Celular</td>
-
-<td>Enviado</td>
-
-<td>R$ 2.100</td>
-
-</tr>
-
-<tr>
-
-<td>#003</td>
-
-<td>Carlos</td>
-
-<td>Monitor</td>
-
-<td>Processando</td>
-
-<td>R$ 1.350</td>
-
-</tr>
-
-<tr>
-
-<td>#004</td>
-
-<td>Ana</td>
-
-<td>Teclado</td>
-
-<td>Pago</td>
-
-<td>R$ 450</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<canvas id="grafico"></canvas>
 
 </div>
 
