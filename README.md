@@ -1,2 +1,0 @@
-# JOGO
-JOGO
