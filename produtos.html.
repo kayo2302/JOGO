@@ -1,0 +1,160 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Produtos</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+<h2>🚀 Dashboard</h2>
+</div>
+
+<ul>
+
+<li><a href="index.html"><i class="fa-solid fa-house"></i><span>Dashboard</span></a></li>
+
+<li><a href="usuarios.html"><i class="fa-solid fa-users"></i><span>Usuários</span></a></li>
+
+<li><a href="relatorios.html"><i class="fa-solid fa-chart-line"></i><span>Relatórios</span></a></li>
+
+<li><a href="financeiro.html"><i class="fa-solid fa-wallet"></i><span>Financeiro</span></a></li>
+
+<li class="active"><a href="produtos.html"><i class="fa-solid fa-box"></i><span>Produtos</span></a></li>
+
+<li><a href="configuracoes.html"><i class="fa-solid fa-gear"></i><span>Configurações</span></a></li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<h1>📦 Produtos</h1>
+
+<div class="actions">
+
+<input type="text" placeholder="Pesquisar produto...">
+
+</div>
+
+</header>
+
+<div class="cards">
+
+<div class="card">
+<i class="fa-solid fa-boxes-stacked"></i>
+<h3>Total de Produtos</h3>
+<h2>520</h2>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-warehouse"></i>
+<h3>Em Estoque</h3>
+<h2>438</h2>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-triangle-exclamation"></i>
+<h3>Estoque Baixo</h3>
+<h2>27</h2>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-ban"></i>
+<h3>Sem Estoque</h3>
+<h2>55</h2>
+</div>
+
+</div>
+
+<div class="tabela">
+
+<h2>Lista de Produtos</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Produto</th>
+<th>Categoria</th>
+<th>Estoque</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>#001</td>
+<td>Notebook Gamer</td>
+<td>Informática</td>
+<td>35</td>
+<td><span class="ok">Disponível</span></td>
+</tr>
+
+<tr>
+<td>#002</td>
+<td>Mouse RGB</td>
+<td>Periféricos</td>
+<td>12</td>
+<td><span class="envio">Baixo</span></td>
+</tr>
+
+<tr>
+<td>#003</td>
+<td>Teclado Mecânico</td>
+<td>Periféricos</td>
+<td>0</td>
+<td><span class="processo">Esgotado</span></td>
+</tr>
+
+<tr>
+<td>#004</td>
+<td>Monitor 27"</td>
+<td>Monitores</td>
+<td>18</td>
+<td><span class="ok">Disponível</span></td>
+</tr>
+
+<tr>
+<td>#005</td>
+<td>SSD 1TB</td>
+<td>Armazenamento</td>
+<td>46</td>
+<td><span class="ok">Disponível</span></td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
