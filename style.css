@@ -1,0 +1,16 @@
+body{
+    background:#222;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+canvas{
+    background:black;
+    border:5px solid lime;
+    margin-top:20px;
+}
+
+h1{
+    color:lime;
+}
